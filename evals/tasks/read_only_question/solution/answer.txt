@@ -1,0 +1,1 @@
+默认超时是 45 秒，定义在 app/settings/defaults.py 的 REQUEST_TIMEOUT。

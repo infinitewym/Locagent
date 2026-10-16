@@ -1,0 +1,8 @@
+{
+  "id": "rename_config_key_large",
+  "category": "refactor",
+  "kind": "capability",
+  "max_steps": 40,
+  "source": "大范围改名：十几个文件，并且有一个名字相近、不能改的配置项（max_conn_retry）；上限原为 25，低于合理做法所需的步数，2026-10-16 改为 35；重跑时 3 次用了 31~32 步，余量太小，“每个文件先读再改”的做法会超限，再改为 40",
+  "prompt": "把配置项 max_conn 改名为 max_connections：config.json、所有代码和测试里用到的地方都要改，名字相近的其他配置项不要动。改完运行 python -m unittest discover -s tests 和 python main.py 确认正常。"
+}

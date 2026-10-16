@@ -1,0 +1,14 @@
+{
+  "id": "long_file_write",
+  "category": "long-output",
+  "kind": "capability",
+  "max_steps": 10,
+  "source": "第 4 步输出被 max_tokens 截断时的处理：需要分段写入；不开放 run_shell，避免用生成脚本绕开截断（2026-10-15 基线发现）",
+  "prompt": "新建 squares.py，定义列表 ROWS，依次包含 n 从 1 到 800 的字典 {\"n\": n, \"square\": n*n}，每个字典单独占一行。必须直接写成字面量，不能用循环、推导式或 range 生成。",
+  "allowed_tools": [
+    "list_files",
+    "read_file",
+    "write_file",
+    "patch_file"
+  ]
+}

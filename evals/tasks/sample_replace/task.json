@@ -1,0 +1,8 @@
+{
+  "id": "sample_replace",
+  "category": "text-edit",
+  "kind": "regression",
+  "max_steps": 4,
+  "source": "pico 基线评测：patch_file 的 old_text 带行号前缀导致匹配失败",
+  "prompt": "把 sample.txt 里单独一行的 beta 改成 beta-locked，其他行保持不变。"
+}

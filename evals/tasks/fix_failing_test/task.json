@@ -1,0 +1,8 @@
+{
+  "id": "fix_failing_test",
+  "category": "bugfix",
+  "kind": "regression",
+  "max_steps": 10,
+  "source": "第 6 步 calc.py 的“运行、修复、再运行”流程",
+  "prompt": "运行 test_stats.py 里的测试，有失败就修复 stats.py（不要修改测试文件），直到测试全部通过。"
+}

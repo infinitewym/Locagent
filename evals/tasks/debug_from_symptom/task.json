@@ -1,0 +1,8 @@
+{
+  "id": "debug_from_symptom",
+  "category": "debugging",
+  "kind": "capability",
+  "max_steps": 15,
+  "source": "只给现象、不给失败测试：要自己定位跨两个文件的两个 bug",
+  "prompt": "运行 python report.py 显示的库存总价不对：按 data/items.csv 计算，正确的总价应该是 2537.00。找出原因并修复代码，不要修改 data/items.csv。"
+}

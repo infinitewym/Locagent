@@ -1,0 +1,6 @@
+{
+  "service": "demo",
+  "max_conn": 8,
+  "max_conn_retry": 3,
+  "timeout": 30
+}

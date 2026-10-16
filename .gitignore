@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+
+# Packaging
+*.egg-info/
+build/
+dist/
+
+# Test and lint caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Local scratch space
+tmp/
+.worktrees/
+.locagent/
+artifacts/
+release/
+
+# Local secrets and provider configuration
+.env
+.env.*
+!.env.example
+
+# 编辑器配置（PyCharm）
+.idea/
+
+# 本地测试用的工作区（agent 在里面生成的文件）
+sandbox/
+
+# OS files
+.DS_Store
+Thumbs.db
+

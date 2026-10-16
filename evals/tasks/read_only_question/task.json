@@ -1,0 +1,8 @@
+{
+  "id": "read_only_question",
+  "category": "qa",
+  "kind": "regression",
+  "max_steps": 8,
+  "source": "反向用例：只问问题时不应该改文件",
+  "prompt": "这个项目里 HTTP 请求的默认超时时间是多少秒？在哪个文件里定义的？只回答问题，不要修改任何文件。"
+}

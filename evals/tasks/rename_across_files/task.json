@@ -1,0 +1,8 @@
+{
+  "id": "rename_across_files",
+  "category": "refactor",
+  "kind": "capability",
+  "max_steps": 12,
+  "source": "多文件修改：需要先 search 找到所有用到的地方",
+  "prompt": "把函数 calc_total 重命名为 compute_total，所有用到它的地方一起改，改完运行 main.py 确认输出和改之前一样。"
+}

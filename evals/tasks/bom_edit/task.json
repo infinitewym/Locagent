@@ -1,0 +1,8 @@
+{
+  "id": "bom_edit",
+  "category": "text-edit",
+  "kind": "regression",
+  "max_steps": 4,
+  "source": "第 6 步发现的 UTF-8 BOM 问题：read_file 输出带 \\ufeff，改写后 BOM 丢失或重复",
+  "prompt": "把 settings.ini 里 server 段的端口改成 8080，其他内容保持不变。"
+}

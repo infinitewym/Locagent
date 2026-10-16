@@ -1,0 +1,8 @@
+{
+  "id": "expense_multistep",
+  "category": "multi-step",
+  "kind": "regression",
+  "max_steps": 15,
+  "source": "第 9 步验证用的记账任务：多个步骤、需要 update_todos 规划",
+  "prompt": "在工作区里完成一个记账小工具，按顺序做：\n1. 新建 expense.py，提供三个函数：add_record(records, name, amount) 往列表里追加一条记录并返回该列表；amount 必须是正数，否则抛 ValueError；total(records) 返回所有记录金额之和；by_name(records, name) 返回指定名称的金额合计。\n2. 新建 test_expense.py，用 unittest 覆盖上面三个函数，包括 amount 为 0 和负数时抛 ValueError 的情况。\n3. 用 run_shell 运行 python -m unittest test_expense -v，有失败就修复，直到全部通过。\n4. 新建 expense_usage.md，用中文写一段简短的使用说明，附一个调用示例。\n完成后告诉我改了哪些文件、测试结果如何。"
+}

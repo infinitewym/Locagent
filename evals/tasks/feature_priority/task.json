@@ -1,0 +1,8 @@
+{
+  "id": "feature_priority",
+  "category": "feature",
+  "kind": "capability",
+  "max_steps": 18,
+  "source": "在已有代码上加功能：要兼容旧数据、保持旧测试通过、补新测试",
+  "prompt": "给 todo/store.py 里的 TodoStore 增加优先级功能：\n1. add(title, priority=\"medium\")：priority 只能是 high、medium、low 之一，否则抛 ValueError；新增的记录要保存 priority 字段。\n2. pending() 按优先级 high、medium、low 排序，同一优先级按 id 从小到大。\n3. 兼容旧数据：JSON 文件里没有 priority 字段的旧记录按 medium 处理。\n4. 在 tests/test_store.py 里补上这些功能的测试，运行 python -m unittest discover -s tests 确认全部通过。"
+}

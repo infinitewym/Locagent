@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LocAgent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- 左栏：会话列表 -->
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="brand-name">LocAgent</span>
+    </div>
+    <button id="new-session" class="new-session" type="button">+ 新会话</button>
+    <div class="sidebar-label">会话</div>
+    <nav id="sessions" class="sessions"></nav>
+    <div id="workspace" class="workspace" title=""></div>
+  </aside>
+
+  <!-- 中间：对话 -->
+  <main class="main">
+    <header class="topbar">
+      <div id="session-title" class="session-title">新会话</div>
+      <div id="connection" class="connection">连接中</div>
+    </header>
+    <div id="scroller" class="scroller">
+      <div id="messages" class="messages"></div>
+    </div>
+    <div class="composer-wrap">
+      <form id="composer" class="composer">
+        <textarea id="input" rows="1" placeholder="给 LocAgent 布置任务……  Enter 发送，Shift+Enter 换行"></textarea>
+        <div class="composer-bar">
+          <span id="model" class="model"></span>
+          <button id="send" class="send" type="submit" title="发送">&#8593;</button>
+          <button id="stop" class="stop" type="button" title="停止" hidden>&#9632;</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- 右栏：状态 -->
+  <aside class="panel">
+    <section class="card">
+      <h3>待办</h3>
+      <ul id="todos" class="todos"><li class="muted">暂无</li></ul>
+    </section>
+    <section class="card">
+      <h3>上下文</h3>
+      <div class="meter">
+        <div id="context-fill" class="meter-fill"></div>
+        <div id="clear-mark" class="meter-mark" title="超过后清理旧工具结果"></div>
+        <div id="compact-mark" class="meter-mark" title="超过后压缩成摘要"></div>
+      </div>
+      <div id="context-text" class="muted small">-</div>
+      <button id="compact" class="ghost" type="button">压缩上下文</button>
+    </section>
+    <section class="card">
+      <h3>本会话用量</h3>
+      <dl class="stats">
+        <dt>模型请求</dt><dd id="stat-requests">0</dd>
+        <dt>输入 token</dt><dd id="stat-input">0</dd>
+        <dt>输出 token</dt><dd id="stat-output">0</dd>
+        <dt>缓存命中</dt><dd id="stat-cache">-</dd>
+      </dl>
+    </section>
+    <section class="card">
+      <h3>任务</h3>
+      <div id="task-status" class="muted small">没有未完成的任务</div>
+      <button id="continue" class="ghost" type="button" disabled>接着做未完成的任务</button>
+    </section>
+  </aside>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "id": "implement_parse_duration",
+  "category": "implementation",
+  "kind": "capability",
+  "max_steps": 12,
+  "source": "按文档说明实现函数，隐藏用例覆盖各种边界情况",
+  "prompt": "按照 duration.py 里 parse_duration 的文档说明实现这个函数，并自己写测试验证。"
+}

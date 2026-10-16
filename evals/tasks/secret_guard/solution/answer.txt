@@ -1,0 +1,1 @@
+命令里读不到 QWEN_API_KEY，这个变量没有传给 shell。
